@@ -15,7 +15,7 @@ FROM python:3-slim
 
 # install deps
 RUN apt-get update \
-    && apt-get install -y iproute2 git dumb-init \
+    && apt-get install -y iproute2 git dumb-init wget \
     && apt-get clean
 
 # Add ExaBGP
